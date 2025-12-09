@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD de Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Controle de finanças</h1>
+
+  <section class="form">
+  
+    <input type="text" id="descricao" placeholder="Descrição"required> 
+    <input type="number" id="valor" placeholder="Valor" required>
+    <select id= "Tipo">
+      <option value="entrada">Entrada</option>
+      <option value="saida">Saida</option>
+    </select>
+    <input type="date" id="data" required> 
+    <button type="submit">Adicionar</button>
+  </section>
+
+  <h2>Saldo:<span id="saldo">R$ 0,00</span></h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Descrição</th>
+        <th>Valor</th>
+        <th>Tipo</th>
+        <th>Data</th>
+        <th>Ação</th>
+
+      </tr>
+    </thead>
+    <tbody id="lista">
+    </tbody>
+  </table>
+
+ <script src="script.js"></script>
+</body>
